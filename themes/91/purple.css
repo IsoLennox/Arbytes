@@ -1,0 +1,65 @@
+/*    GREY THEME*/
+
+
+/*
+
+comp grey: #6D597F;
+comp green #9A998D;
+dark purpl:  #5A2F7F;
+2nd dark: #914BCC;
+3 dark: #B55EFF;
+lightest: #D5A4FF;
+
+#52455B;
+#D2B0E7;
+#8C759A;
+#987FA7;
+#756281;
+#D4B6E7;
+#DBCCE7;
+
+
+*/
+
+body {background-image: url(../img/tweed.JPG); }
+
+header a{ color: white;}
+
+header{ 
+    background: #6D597F; 
+    color: white;  
+}
+
+#page {background: #DBCCE7; }
+
+aside, nav {background: whitesmoke; }
+     
+aside a{color: grey; } 
+    
+aside ul a:hover{ color: #5A2F7F;}
+
+footer a {color: white;}
+
+.note, .article, .singlenote {
+    border: 1px solid grey;
+    background: #f4f4f4;
+}
+
+.singlenote { background: #CECECE; }
+    
+.result{margin-bottom:  border: 1px solid #00A2FF;}
+
+.message{ background: #2C2C2C; } 
+    
+#messages_notification{color: #9DD3B9;}
+
+.headings{  background: #987FA7; padding: 10px;}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1000px) {
+    nav ul a:hover{ color: #5A2F7F;}   
+}
+    
+    

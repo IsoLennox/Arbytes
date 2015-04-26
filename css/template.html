@@ -1,0 +1,892 @@
+
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <title>Arbytes</title>
+      <link rel='shortcut icon' href='arbytes.ico' type='image/x-icon'/ >
+     <link rel="stylesheet" href="template.css">
+ 
+<!--
+    Author: Isobel Lennox
+    Created: Winter 2015
+    For: Personal Development/CTEC290   
+-->
+     
+<!--     THEMES-->
+               
+<!--     Coffee theme-->
+<!--   <link rel='stylesheet' type='text/css' href='css/coffee.css' />-->
+   
+   
+   <link rel='stylesheet' type='text/css' href='themes/87/grey.css' />
+
+     
+     
+
+    
+     
+     <!-- Arbyte is a pun branched from the term "Arbeit" meaning 'task' or 'work' and "bytes" -->
+     
+     
+     
+     
+<!--     TABS -->
+     
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" ></script>  
+ <script src="js/tabs.js" ></script> 
+ <link rel="stylesheet" href="css/tabs.css"> 
+ 
+ 
+<!--SLIDE DOWN MENU-->
+
+    <link rel="stylesheet" href="css/slide-down.css">
+    <script src="js/jquery_2.1.1.js"></script>
+    <script>$(document).ready(function(){
+	$("#accordian .label-title").click(function(){
+		//slide up all the link lists
+		$("#accordian .label-description").slideUp();
+		//slide down the link list below the h3 clicked - only if its closed
+		if(!$(this).next().is(":visible"))
+		{
+			$(this).next().slideDown();
+		}
+	})
+})</script> 
+ 
+
+ </head>
+ <body>
+    <header> 
+        
+       
+      <a href="home.php"> <img id="logo" src="img/full_logo3.png" title="arbytes logo" /></a>
+         <p id="welcome">Hi, <a title="View your profile" class="tooltip" href="employee_profile.php?user_id=87">Isobel</a> | <a href="messages.php?user_id=87"><span id="messages_notification">0</span>  <img src="img/icons/tiny-white-messages.png" title="See all Messages" /></a> | <a href="notifications.php"><span id="messages_notification">0</span>  <img src="img/icons/tiny-white-notifications.png" title="See all notifications" /> </a>  </p>
+
+ 
+        <form id="searchbar" action="search.php?go" method="post">
+        <input type="text" name="query" value="" placeholder="Ask HelpBot:" />  
+      <input type="submit" name="submit" value="Ask" />
+        </form> 
+    </header>
+    
+     
+<!--     FULL PAGE MENU -->
+   <aside> 
+     	<ul>
+     	
+     	
+     	         <a title="View your profile" class="tooltip" href="employee_profile.php?user_id=87"> <img id="avatar" src="uploads/87/Screenshot_2015-01-22-22-26-53.png" title="View Your Profilee"/></a>      
+   
+
+<li><a title="View your profile" class="tooltip" href="employee_profile.php?user_id=87">Isobel</a></li>
+
+
+ 
+ <li><a title="View your Group Profile" class="tooltip" href="company_profile.php?company_id=33">CTEC Hackers</a></li>
+            
+  
+        
+
+
+    <li><a href="notes.php"><img src="img/icons/book.png" title="See all Notes" /> Posts</a></li>
+                     
+                       <li><a href="files.php"><img src="img/icons/files.png" title="See all Files" /> Files</a></li>
+  
+      
+  
+
+      
+      <li><a href="employees.php"><img src="img/icons/tiny-contacts.png" title="See all Employees" /> Members</a></li>
+      
+      <br/> 
+<li><a href="settings.php"><img src="img/icons/settings.png" title="Settings" /> Settings</a></li>
+<li><a href="logout.php"><img src="img/icons/logout.png" title="Log Out" /> Logout</a></li>
+       </ul>
+
+     </aside> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--MEDIA QUERIE/MOBILE MENU-->
+
+
+
+
+ <section class="menu-wrapper">
+	<div class="container" id="accordian">
+ 	<article class="label">
+		<section class="label-title">
+			<h1 class="drop_menu"><img src="img/icons/dropdown.png"/> MENU</h1>
+		</section>
+		<section class="label-description"> 
+            <nav>
+     			<ul>
+
+    <li><a href="notes.php"><img src="img/icons/book.png" title="See all Notes" /> Posts</a></li>
+                     
+                                           <li><a href="files.php"><img src="img/icons/files.png" title="See all Files" /> Files</a></li>
+
+                    
+                                            
+                    
+
+
+                  <li><a href="employees.php"><img src="img/icons/tiny-contacts.png" title="See all Employees" /> Members</a></li>
+ <br/> 
+    <li><a href="settings.php"><img src="img/icons/settings.png" title="Settings" /> Settings</a></li>
+    <li><a href="logout.php"><img src="img/icons/logout.png" title="Log Out" /> Logout</a></li>
+                </ul>
+            </nav>
+            </section>
+        </article>
+    </div>
+</section> 
+ 
+
+    
+     
+
+ <div id="page">     <h2 class="headings">
+     
+    Posts from CTEC Hackers </h2>
+ 
+ 
+ <section class="wrapper">
+	<div class="container" id="accordian">
+ 	<article class="label">
+		<section class="label-title">
+			<h1 class="name"><img src="img/icons/tiny-newpost.png"/> 
+			
+			Add A Post</h1>
+<!--			<section class="subtitle">Subtitle Area</section>-->
+		</section>
+		<section class="label-description"> 
+			<form action="create_note.php" method="post">
+ 
+        <p>Title:
+        <input type="text" name="title" value="" /> </p>
+        
+         <p>Note: <br/>
+    <textarea name="content" value="" rows="3" cols="80"></textarea></p>
+         
+      <input type="submit" name="submit" value="Create" />
+    </form>
+		</section>
+	</article>
+</div>
+     </section>
+ 
+ 
+     
+         <form action="filter_notes.php?employee_id=87" ><select name="employee_selected"><option value="0">All</option><option value="87">Isobel Lennox</option><option value="91">Zora Faulconer</option><option value="92">Rosemary Perkins</option><option value="93">Bette Davis</option><option value="94">LaRhea Phillips</option><option value="95">Cassie Wangerin</option></select>&nbsp;&nbsp;<input type="submit" name="submit" value="Filter" /></form>     
+
+     
+<hr/>
+ 
+
+
+ 
+ 
+<div class='note_list'><img src="img/note.png" title="notes-icon" /><span class='right'><a href='note_single.php?note_id=47'><strong>Themes</strong></a><br/> By: <a href='employee_profile.php?user_id=91'>Zora Faulconer</a> <br/>  February 8, 2015 a	 7:37pm</span><br/><br/>You can now upload your own theme for this group! I will provide a template in the group files a lit...<br/><a href='note_single.php?note_id=47'>Read More</a><br/><span class='right'>0 comments</span><br/></div> <div class='note_list'><img src="img/note.png" title="notes-icon" /><span class='right'><a href='note_single.php?note_id=44'><strong>Post Notifications</strong></a><br/> By: <a href='employee_profile.php?user_id=91'>Zora Faulconer</a> <br/>  February 8, 2015 a	 12:32pm</span><br/><br/>Success. Post notifications now work correctly.  Now moving on to file upload notifications....<br/><a href='note_single.php?note_id=44'>Read More</a><br/><span class='right'>0 comments</span><br/></div> <div class='note_list'><img src="img/note.png" title="notes-icon" /><span class='right'><a href='note_single.php?note_id=34'><strong>Welcome To CTEC Hackers</strong></a><br/> By: <a href='employee_profile.php?user_id=87'>Isobel Lennox</a> <br/>  February 5, 2015 a	 9:37pm</span><br/><br/>A place to share!...<br/><a href='note_single.php?note_id=34'>Read More</a><br/><span class='right'>1 comments</span><br/></div> </div>
+ </body>
+ </html> 
+ 
+
+
+<style>
+body {
+
+    background-image: url(../img/tweed.JPG);
+
+     padding: 0;
+
+    margin: 0;
+
+    font-size: 18px;
+
+    font-family: sans-serif;
+
+}
+
+img {max-width: 600px;}
+
+
+nav {display: none;  }
+
+.drop_menu {display: none;  }
+
+ aside {display: block;}
+
+
+
+#logo {
+
+    position: relative;
+
+    top: 10px;
+
+}
+
+
+
+header a{
+
+    text-decoration: none; 
+
+
+
+}
+
+#avatar {width: 150px; height: 150px;}
+
+
+
+header{ 
+
+    color: white;  
+
+    padding: 10px 30px 0px 30px;
+
+    margin-bottom: 20px;
+
+    box-shadow: 0 0 15px black;
+
+ 
+
+}
+
+#welcome{
+
+    float: right;
+
+}
+
+
+
+#searchbar { 
+
+/*    margin-top: 50px;*/
+
+    width: 300px;  
+
+    margin: 0 auto;
+
+    border-radius: 5px;
+
+    position: relative; top: -30px; 
+
+}
+
+
+
+
+
+#loginpage { 
+
+}
+
+
+
+#page{ 
+
+    border-radius: 5px;
+
+    padding: 10px;
+
+    padding-left: 30px;
+
+    margin-bottom: 20px;
+
+    max-width: 1100px;  
+
+    margin: 0 auto;
+
+    width: 60%;
+
+    float: left;
+
+}
+
+
+
+a{text-decoration: none;}
+
+aside {
+
+ margin: 0 10px 0 10px;
+
+    width: 15%;
+
+    padding: 10px;
+
+    float: left; 
+
+    margin-right: 20px;
+
+    margin-left: 40px;
+
+    border-radius: 10px;
+
+ }
+
+     
+
+
+
+
+
+aside ul li{ line-height: 2em; list-style: none}
+
+aside a{ 
+
+    color: grey; 
+
+    font-size: 24px;
+
+    padding: 8px;
+
+    text-decoration: none; 
+
+    text-align: left;
+
+} 
+
+
+
+aside ul {width: auto;  }
+
+
+
+
+
+
+
+.clear {clear: both;}
+
+     
+
+ .tooltip{
+
+    display: inline;
+
+    position: relative;
+
+}
+
+
+
+
+
+
+
+footer {
+
+    clear: both;
+
+    padding: 10px;
+
+    text-align: center;
+
+}
+
+#collect a {text-decoration: none;}
+
+ 
+
+#page {
+
+    min-height: 600px;
+
+    height: auto; 
+
+    max-width: 1100px;  
+
+    margin: 0 auto;
+
+} 
+
+
+
+#placeholder {width: 600px;}
+
+.right {float: right;}
+
+
+
+.note, .article, .singlenote, .memb_files {
+    
+    margin-bottom: 50px;
+    border: 1px solid grey;
+    padding: 20px;
+    word-wrap: break-word;
+    background: white;
+
+}
+
+
+.memb_files { height:400px;
+    max-width: 250px;
+    float: left;
+     margin: 5px;
+}
+
+.memb_files img {
+    max-width: 250px;
+    max-height: 250px;
+    }
+
+.avatar_gallery {
+    height: 250px;
+    max-width: 250px;
+    background: white;
+    padding: 20px;
+    border: 1px solid grey;
+    margin: 5px;
+    float: left;
+}
+.avatar_gallery img {height: 200px;
+    max-width: 250px;
+    padding-right: 10px;
+    float: left;}
+
+
+.files, .note_list {margin-bottom: 50px;
+
+    border: 1px solid grey;
+
+    padding: 20px;
+
+    word-wrap: break-word;
+
+    width: 350px;
+
+    float: left;
+
+    margin: 10px;
+
+    background: white;
+
+}
+
+.files{height: 150px;}
+#wrapper {height: 100px;}
+.files img {
+    
+    max-height: 100px;
+    max-width: 100px;}
+
+
+
+.note_list {width: 400px;
+
+    min-height: 200px; 
+
+}
+.avatar_list {float: left;}
+
+
+.tickets{
+
+    border: 1px solid grey;
+
+    padding: 10px;
+
+    float: left;
+
+    width: 250px;
+
+    margin-right: 10px;
+
+    background: whitesmoke;
+
+}
+
+
+
+.article{margin-top: 40px;}
+
+ 
+
+
+
+.result{margin-bottom: 50px;
+
+    border: 1px solid #00A2FF;
+
+    padding: 20px; 
+
+    max-width: 500px;
+
+
+
+}
+
+
+
+.message{
+
+    width: 250px;
+
+    margin: 10px;
+
+    padding: 5px;
+
+    color: #eee;
+
+    border-radius: 5px;
+
+} 
+
+#message-scroll{border: 3px solid black;
+
+    max-height: 400px;
+
+    overflow: scroll;
+
+}
+
+
+
+
+
+.center{text-align: center;}
+
+
+
+.headings{ padding: 10px;}
+
+
+
+#preview {
+
+    width: 400px;
+
+    height: auto;
+
+    max-height: 400px;
+
+    padding: 10px;
+
+    border: 1px solid grey;
+
+    overflow: scroll;
+
+}
+
+
+
+
+
+.profile {
+    background: white;
+    padding: 20px;
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.paddingbottom{padding-bottom: 50px;}
+
+
+
+
+
+#login{
+
+    background: white;
+
+    margin: 0 auto;
+
+    width: 300px;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    
+
+} 
+
+
+
+#createButton a {color: white}
+
+#createButton {  text-align: center; }
+
+
+
+#loginButton {
+
+    padding: 15px; 
+
+    color: white;
+
+    width: 200px;
+
+    border-radius: 10px;
+
+    background: #87D24F; /* Old browsers */
+
+background: -moz-linear-gradient(top,  #87D24F 0%, #61c419 50%, #87D24F 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#87D24F), color-stop(50%,#61c419), color-stop(100%,#87D24F)); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  #87D24F 0%,#61c419 50%,#87D24F 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  #87D24F 0%,#61c419 0%,#87D24F 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  #87D24F 0%,#61c419 50%,#87D24F 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  #87D24F 0%,#61c419 50%,#87D24F 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87D24F', endColorstr='#87D24F',GradientType=0 ); /* IE6-9 */
+
+    border: 1px solid green; 
+
+    margin: 0 auto;
+
+    text-align: center;
+
+
+
+} 
+
+#createButton a {}
+
+
+
+#loginButton{
+
+    font-family: sans-serif;
+
+    color: white;
+
+    font-size: 20px;
+
+    
+
+}
+
+
+
+#loginButton:hover {cursor: pointer;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+
+
+ 
+
+
+
+@media (max-width: 1400px) {
+
+     
+
+   
+
+    
+
+    
+
+  aside   { 
+
+    width: 25%;
+
+      padding: 0;  
+
+  }
+
+}
+
+
+
+@media (max-width: 1000px) {
+
+    
+
+     aside {display: none;}
+
+    nav, .drop_menu {display:block;
+
+    margin-bottom: 0;
+
+    }
+
+    
+
+    .menu-wrapper h1{
+
+        text-align: center;
+
+        font-size: 30px;
+
+        position: relative; top: -20px;
+
+        
+
+    }
+
+     
+
+      
+
+  #page { 
+
+      width: 84%;
+
+      clear: both;
+
+      margin: 30px;
+
+  }
+
+     
+
+    textarea {
+
+    max-width: 70%;
+
+    }
+
+    
+
+ 
+
+     
+
+    nav{ 
+
+        border-radius: 10px;
+
+        width: 400px; 
+
+        margin: 0 auto;
+
+        margin-left: 30px;
+
+    } 
+
+
+
+    nav ul { 
+
+    padding-left: 40px;
+
+          margin: 0 auto;
+
+  }
+
+    nav ul li{ line-height: 2em; list-style: none}
+
+    nav a{ 
+
+        color: black; 
+
+        font-size: 24px;
+
+        padding: 8px;
+
+        text-decoration: none;  
+
+    } 
+
+
+
+    nav ul {width: auto;  }
+
+
+
+
+
+    
+
+    
+
+}/*end 1450px*/
+
+    
+
+    @media (max-width: 800px) {
+
+    body { }
+
+        
+
+        #searchbar { 
+
+ 
+
+    left: 40px;
+
+}
+
+    }
+
+
+
+}
+</style>

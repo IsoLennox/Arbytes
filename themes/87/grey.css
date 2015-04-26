@@ -1,0 +1,65 @@
+/*    GREY THEME*/
+
+
+body {
+    background-image: url(../../img/tweed.JPG); 
+    background: #666;
+}
+
+
+a {color: #42557F;}
+a:hover {color:black;}
+header a{ color: white;}
+
+
+header{ 
+    background: #494949; 
+    color: white;  
+}
+
+#page {background: white; }
+
+aside {background: whitesmoke; }
+     
+aside a{color: #2C2C2C; } 
+    
+aside ul a:hover{ color: #535353;}
+
+footer a {color: white;}
+
+.note, .article, .singlenote {
+    border: 1px solid grey;
+    background: #f4f4f4;
+}
+
+.singlenote { padding: 20px; background: #eee; padding: 20px; }
+    
+.result{margin-bottom:  border: 1px solid #00A2FF;}
+
+.message{ background: #2C2C2C; } 
+    
+
+
+.headings{  background: #9DD3B9; padding: 10px;}
+
+.feed_content {
+    border-bottom: 1px solid grey;
+    background: rgba(255,255,255,.3);
+}
+#messages_notification, #messages_notification a{
+  color: #9DD3B9;
+  /*    color: white; */
+z-index: 999;
+font-size:19px;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1000px) {
+    nav{ background:#494949; } 
+    nav ul a:hover{ color: #535353;}   
+}
+    
+    

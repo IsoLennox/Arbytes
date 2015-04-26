@@ -1,0 +1,54 @@
+/*    GREY THEME */
+
+/* FOR USE AS TEMPLATE */
+
+
+body {background-image: url(http://...); }
+
+
+a {color: #42557F;}
+
+a:hover {color:black;}
+
+header a{ color: white;}
+
+
+header{ 
+    background: #494949; 
+    color: white;  
+}
+
+#page {background: white; }
+
+aside {background: whitesmoke; }
+     
+aside a{color: grey; } 
+    
+aside ul a:hover{ color: #535353;}
+
+footer a {color: white;}
+
+.note, .article, .singlenote {
+    border: 1px solid grey;
+    background: #f4f4f4;
+}
+
+.singlenote { background: #CECECE; }
+    
+.result{margin-bottom:  border: 1px solid #00A2FF;}
+
+.message{ background: #2C2C2C; } 
+    
+#messages_notification{color: #9DD3B9;}
+
+.headings{  background: #9DD3B9; padding: 10px;}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1000px) {
+    nav{ background: whitesmoke; } 
+    nav ul a:hover{ color: #535353;}   
+}
+    
+    

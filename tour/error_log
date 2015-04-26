@@ -1,0 +1,11 @@
+[20-Feb-2015 16:01:30 America/Chicago] PHP Warning:  require_once(functions/session.php): failed to open stream: No such file or directory in /home4/ilennox/public_html/arbytes/tour/inc/tourheader.php on line 1
+[20-Feb-2015 16:01:30 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'functions/session.php' (include_path='.:/opt/php55/lib/php') in /home4/ilennox/public_html/arbytes/tour/inc/tourheader.php on line 1
+[20-Feb-2015 16:02:33 America/Chicago] PHP Warning:  include(inc/footer.php): failed to open stream: No such file or directory in /home4/ilennox/public_html/arbytes/tour/grouptour_files.php on line 401
+[20-Feb-2015 16:02:33 America/Chicago] PHP Warning:  include(inc/footer.php): failed to open stream: No such file or directory in /home4/ilennox/public_html/arbytes/tour/grouptour_files.php on line 401
+[20-Feb-2015 16:02:33 America/Chicago] PHP Warning:  include(): Failed opening 'inc/footer.php' for inclusion (include_path='.:/opt/php55/lib/php') in /home4/ilennox/public_html/arbytes/tour/grouptour_files.php on line 401
+[20-Feb-2015 16:02:58 America/Chicago] PHP Warning:  include(inc/footer.php): failed to open stream: No such file or directory in /home4/ilennox/public_html/arbytes/tour/grouptour_files.php on line 401
+[20-Feb-2015 16:02:58 America/Chicago] PHP Warning:  include(inc/footer.php): failed to open stream: No such file or directory in /home4/ilennox/public_html/arbytes/tour/grouptour_files.php on line 401
+[20-Feb-2015 16:02:58 America/Chicago] PHP Warning:  include(): Failed opening 'inc/footer.php' for inclusion (include_path='.:/opt/php55/lib/php') in /home4/ilennox/public_html/arbytes/tour/grouptour_files.php on line 401
+[20-Feb-2015 16:04:07 America/Chicago] PHP Warning:  include(inc/footer.php): failed to open stream: No such file or directory in /home4/ilennox/public_html/arbytes/tour/grouptour_files.php on line 401
+[20-Feb-2015 16:04:07 America/Chicago] PHP Warning:  include(inc/footer.php): failed to open stream: No such file or directory in /home4/ilennox/public_html/arbytes/tour/grouptour_files.php on line 401
+[20-Feb-2015 16:04:07 America/Chicago] PHP Warning:  include(): Failed opening 'inc/footer.php' for inclusion (include_path='.:/opt/php55/lib/php') in /home4/ilennox/public_html/arbytes/tour/grouptour_files.php on line 401

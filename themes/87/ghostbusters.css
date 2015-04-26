@@ -1,0 +1,49 @@
+/*    GHOSTBUSTERS THEME*/
+
+  
+
+a {color: #B20071; }
+a:hover {color: black; }
+
+body {background-image: url(../../img/tweed.JPG); }
+
+header a{ color: white;}
+
+header{ 
+    background: #413256; 
+    color: white;  
+}
+
+#page {background: #BFBB93; }
+/*#page {background: #A3B745; }*/
+
+aside, nav {background: whitesmoke; }
+     
+aside a{color: grey; } 
+    
+aside ul a:hover{ color: #91E52A;}
+
+footer a {color: white;}
+
+.note, .article, .singlenote {
+    border: 1px solid grey;
+    background: #f4f4f4;
+}
+
+.singlenote { background: #CECECE; }
+    
+.result{margin-bottom:  border: 1px solid #00A2FF;}
+
+.message{ background: #2C2C2C; } 
+    
+#messages_notification{color: #9DD3B9;}
+
+.headings{  background: #91E52A; padding: 10px;}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1000px) {
+    nav ul a:hover{ color: #413256;}   
+}
+     

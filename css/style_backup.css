@@ -1,0 +1,332 @@
+body {background: lightgrey; 
+    background-image: url(../img/tweed.JPG);
+     padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+nav {display: none;  }
+.drop_menu {display: none;  }
+ aside {display: block;}
+
+#logo {
+    position: relative;
+    top: 10px;
+}
+
+header a{
+    text-decoration: none; 
+/*    color: #BB462F;*/
+    color: white;
+}
+
+header{ 
+    background: #494949; 
+    color: white;  
+    padding: 10px 30px 0px 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px black;
+ 
+}
+#welcome{
+    float: right;
+}
+
+#searchbar { 
+/*    margin-top: 50px;*/
+    width: 300px;  
+    margin: 0 auto;
+    border-radius: 5px;
+    position: relative; top: -30px; 
+}
+
+
+#loginpage { 
+}
+
+#page{
+    background: white; 
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    max-width: 1100px;  
+    margin: 0 auto;
+    width: 60%;
+    float: left;
+}
+
+a{text-decoration: none;}
+aside {
+ margin: 0 10px 0 10px;
+    width: 15%;
+    padding: 10px;
+    background: whitesmoke;
+    float: left; 
+    margin-right: 20px;
+    margin-left: 40px;
+    border-radius: 10px;
+ }
+     
+/*
+aside{ 
+    background: white;
+    max-width: 1140px;  
+    margin: 0 auto;
+} 
+*/
+
+aside ul li{ line-height: 2em; list-style: none}
+aside a{ 
+    color: grey; 
+    font-size: 24px;
+    padding: 8px;
+    text-decoration: none; 
+    text-align: left;
+} 
+ aside ul a:hover{ color: #535353;}
+
+aside ul {width: auto;  }
+
+/*aside ul li{ display: inline; line-height: 2em;}*/
+
+
+/*aside ul li:after{ content: " | "; } */
+aside ul li:last-child:after {
+/*  content: '';*/
+}
+
+/*aside ul a:hover{ background: #535353;}*/
+
+     
+ .tooltip{
+    display: inline;
+    position: relative;
+}
+
+
+
+footer {
+    clear: both;
+    padding: 10px;
+    text-align: center;
+}
+footer a {color: white;}
+#collect a {text-decoration: none;}
+ 
+#page {
+    min-height: 600px;
+    height: auto; 
+    max-width: 1100px;  
+    margin: 0 auto;
+} 
+
+#placeholder {width: 600px;}
+.right {float: right;}
+
+.note, .article, .singlenote {margin-bottom: 50px;
+    border: 1px solid grey;
+    padding: 20px;
+    word-wrap: break-word;
+    background: #f4f4f4;
+}
+
+.singlenote {
+    background: #CECECE;
+     
+}
+
+.article{margin-top: 40px;}
+ 
+
+.result{margin-bottom: 50px;
+    border: 1px solid #00A2FF;
+    padding: 20px; 
+    max-width: 500px;
+
+}
+
+.message{
+    background: #2C2C2C;
+    width: 250px;
+    margin: 10px;
+    padding: 5px;
+    color: #eee;
+    border-radius: 5px;
+} 
+#messages_notification{color: #9DD3B9;}
+#message-scroll{border: 3px solid black;
+    max-height: 400px;
+    overflow: scroll;
+}
+
+
+.center{text-align: center;}
+
+.headings{  background: #9DD3B9; padding: 10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.paddingbottom{padding-bottom: 50px;}
+
+
+#login{
+    background: white;
+    margin: 0 auto;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    
+} 
+
+#createButton a {color: white}
+#createButton {  text-align: center; }
+
+#loginButton {
+    padding: 15px; 
+    color: white;
+    width: 200px;
+    border-radius: 10px;
+    background: #87D24F; /* Old browsers */
+background: -moz-linear-gradient(top,  #87D24F 0%, #61c419 50%, #87D24F 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#87D24F), color-stop(50%,#61c419), color-stop(100%,#87D24F)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #87D24F 0%,#61c419 50%,#87D24F 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #87D24F 0%,#61c419 0%,#87D24F 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #87D24F 0%,#61c419 50%,#87D24F 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #87D24F 0%,#61c419 50%,#87D24F 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87D24F', endColorstr='#87D24F',GradientType=0 ); /* IE6-9 */
+    border: 1px solid green; 
+    margin: 0 auto;
+    text-align: center;
+
+} 
+#createButton a {}
+
+#loginButton{
+    font-family: sans-serif;
+    color: white;
+    font-size: 20px;
+    
+}
+
+#loginButton:hover {cursor: pointer;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+ 
+
+@media (max-width: 1400px) {
+     
+   
+    
+    
+  aside   { 
+    width: 25%;
+      padding: 0;  
+  }
+}
+
+@media (max-width: 1000px) {
+    
+     aside {display: none;}
+    nav, .drop_menu {display:block;
+    margin-bottom: 0;
+    }
+    
+    .menu-wrapper h1{
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        position: relative; top: -20px;
+        
+    }
+     
+      
+  #page { 
+      width: 84%;
+      clear: both;
+      margin: 30px;
+  }
+     
+    textarea {
+    max-width: 70%;
+    }
+    
+ 
+     
+    nav{ 
+        border-radius: 10px;
+        width: 400px;
+        background: whitesmoke;  
+        margin: 0 auto;
+        margin-left: 30px;
+    } 
+
+    nav ul { 
+    padding-left: 40px;
+          margin: 0 auto;
+  }
+    nav ul li{ line-height: 2em; list-style: none}
+    nav a{ 
+        color: black; 
+        font-size: 24px;
+        padding: 8px;
+        text-decoration: none;  
+    } 
+     nav ul a:hover{ color: #535353;}
+
+    nav ul {width: auto;  }
+
+/*    nav ul li{ display: inline; line-height: 2em;}*/
+
+
+/*
+    nav ul li:after{ content: " | "; } 
+    nav ul li:last-child:after {
+      content: '';
+    }
+*/
+
+    nav ul a:hover{ color: #535353;}
+    
+    
+    
+}/*end 1450px*/
+    
+    @media (max-width: 800px) {
+    body { }
+
+    }
+        
+ 
+/*
+    aside{width: 90%; background: grey;} 
+    aside a{ color: white; font-size: 22px;} 
+    aside ul li{ display: inline; line-height: 2em;}
+    aside ul li:after{ content: " | "; }
+    aside ul a:hover{ background: darkgrey;}
+*/
+}

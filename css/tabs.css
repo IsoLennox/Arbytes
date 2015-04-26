@@ -1,0 +1,152 @@
+ 
+.tabs {
+	margin: 0;
+	padding: 0;	
+	zoom : 1;
+}
+.tabs li {
+	float: left;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+    
+}
+.tabs a {
+	display: block;
+	text-decoration: none;
+	padding: 3px 5px;
+	background-color: #9DD3B9;
+	margin-right: 10px;
+	border: 1px solid rgb(153,153,153);
+	margin-bottom: -1px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.tabs .active {
+	border-bottom: 1px solid white;
+	background-color: white;
+	color: rgb(51,72,115);
+	position: relative;
+    
+}
+
+.panelContainer {
+	clear: both;
+	margin-bottom: 25px;	
+	border: 1px solid rgb(153,153,153);	
+	border-top: 1px solid rgb(153,153,153);	
+	background-color: white;
+	padding: 10px;
+}
+
+.panel h2 {
+	color: rgb(57,78,121);
+	text-shadow: none;		
+}
+.panel p {
+	color: black;	
+}
+
+
+
+/*HEADER TBS*/
+
+
+
+ <style>
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ 
+
+.tab-sections {
+  width: 650px;
+  float: none;
+  list-style: none;
+  position: relative;
+  margin: 80px 0 0 10px;
+  text-align: left;
+}
+
+.tab-sections label { color: black;}
+.tab-sections li {
+  float: left;
+  display: block;
+}
+.tab-sections input[type="radio"] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.tab-section-content input[type="radio"]{
+ position: static;
+
+}
+
+.tab-sections label {
+  display: block;
+  padding: 14px 21px;
+  border-radius: 2px 2px 0 0;
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  background: #888;
+  cursor: pointer;
+  position: relative;
+  top: 4px;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.tab-sections label:hover {
+  background: #777;
+}
+.tab-sections .tab-section-content {
+  z-index: 2;
+  display: none;
+  overflow: hidden;
+  width: 100%;
+  font-size: 17px;
+  line-height: 25px;
+  padding: 25px;
+  position: absolute;
+  top: 53px;
+  left: 0; 
+}
+.tab-sections [id^="tab-section"]:checked + label {
+  top: 0;
+  padding-top: 17px;
+  background: #fff;
+}
+.tab-sections [id^="tab-section"]:checked ~ [id^="tab-section-content"] {
+  display: block;
+    background: #fff;
+}
+
+p.link {
+  clear: both;
+  margin: 380px 0 0 15px;
+}
+p.link a {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: #612e76;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+
+</style>
