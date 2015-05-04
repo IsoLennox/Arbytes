@@ -3,8 +3,8 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 12, 2015 at 05:55 PM
--- Server version: 5.5.38-35.2
+-- Generation Time: May 04, 2015 at 06:05 PM
+-- Server version: 5.5.42-37.1
 -- PHP Version: 5.4.23
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -159,7 +159,7 @@ CREATE TABLE IF NOT EXISTS `groups` (
   `id` int(11) NOT NULL,
   `group_name` varchar(60) NOT NULL,
   `profile_content` varchar(100) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `groups`
@@ -219,7 +219,7 @@ CREATE TABLE IF NOT EXISTS `members` (
 
 INSERT INTO `members` (`id`, `first_name`, `last_name`, `username`, `password`, `email`, `profile`, `theme`) VALUES
 (87, 'Isobel', 'Lennox', 'iso', '$2y$10$nP9OOkzp.dBvV6AyL3jFA.CyMrwt5mkZiYcZx0mm5G97bm3Rma74i', 'isolennox@gmail.com', '', 3),
-(91, 'Zora', 'Faulconer', 'admin', '$2y$10$aLB6T13D13Rrg74AyZBfiuD3AL21UX5wRRLJd2Qb2kagnHfn5btsC', 'i.lennox@students.clark.edu', 'Chocolate rain.', 31),
+(91, 'Zora', 'Faulconer', 'admin', '$2y$10$aLB6T13D13Rrg74AyZBfiuD3AL21UX5wRRLJd2Qb2kagnHfn5btsC', 'i.lennox@students.clark.edu', 'Chocolate rain.', 2),
 (92, 'Rosemary', 'Perkins', 'rperkins', '$2y$10$TTXr2ls.hPMKNhjZ0kbsKe1XCc6t3qgPAsHKEvKp3liKxSY37EOXS', 'perkinsrosemaryl@gmail.com', 'I have a happy face tattoo on my hand because I''m edgy.  I have a PHP friends with benefits...not quite a boyfriend and no baby yet.', 1),
 (93, 'Bette', 'Davis', 'bette', '$2y$10$X3AOuw3aFgn1g2yuseS3ZefNed3Ca23C6bXbdkJwRuIy.vsjPGzm.', 'isolennox@gmail.com', '', 0),
 (94, 'LaRhea', 'Phillips', 'l.phillips', '$2y$10$rSnb5BsP6XHajMvW3i84kuKfFg0K/8wO0kB0yC0tuhgb7BgotHLuO', 'larhea.phillips@yahoo.com', '', 1),
@@ -947,7 +947,7 @@ ALTER TABLE `file_comments`
 -- AUTO_INCREMENT for table `groups`
 --
 ALTER TABLE `groups`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=41;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=39;
 --
 -- AUTO_INCREMENT for table `help`
 --
